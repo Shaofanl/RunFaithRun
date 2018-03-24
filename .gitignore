@@ -1,0 +1,8 @@
+*.swp
+*.npy
+*.npz
+**/__pycache__/
+
+data/
+models/
+outputs/

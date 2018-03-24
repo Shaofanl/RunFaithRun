@@ -1,0 +1,10 @@
+# runfaithrun log 1
+
+This is a demo of how to use the computer vision to control the jumping in the Mirror's Edge.
+
+The program will record the raw pixel from the window and pass it to a neural network, whose output is the confidence of whether to jump at this moment.
+
+We crop the window and resize it to (180, 300). Previous 2 frames are also collected and stacked with the current one into a [180, 300, 9] matrix to make an input.
+
+I only control the cursor, `w` key (running forward) and `shift` key (soft landing). Whether to jump is controlled by the program.
+
